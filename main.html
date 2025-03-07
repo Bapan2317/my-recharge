@@ -37,13 +37,13 @@
     </style>
 </head>
 <body class="bg-gray-300 poppins-font">
-    <section class="max-w-md min-h-screen mx-auto bg-white">
+    <section class="max-w-md  mx-auto bg-white">
         <!-- header -->
         <header>
-            <div class="navbar bg-blue-800 text-white shadow-sm">
-                <div class="navbar-start">
+            <div class="navbar bg-blue-800 shadow-sm">
+                <div class="navbar-start ">
                     <div class="dropdown">
-                        <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                        <div tabindex="0" role="button" class="btn btn-ghost btn-circle  text-white">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /> </svg>
                         </div>
                         <ul
@@ -55,10 +55,10 @@
                         </ul>
                     </div>
                 </div>
-                <div class="navbar-end">
-                    <div class="flex gap-3 mr-3">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                        <i class="fa-solid fa-bell"></i>
+                <div class="navbar-end  text-white">
+                    <div class="flex gap-3 mr-3 ">
+                        <i class="fa-solid fa-magnifying-glass text-lg"></i>
+                        <i class="fa-solid fa-bell text-lg"></i>
                     </div>
                 </div>
                 
@@ -70,6 +70,57 @@
         <!-- main -->
         <main>
             <div>
+                <!-- slider ber -->
+                 <div class="mt-4">
+                    <div class="carousel w-full  rounded-lg  h-32">
+                        <div id="slide1" class="carousel-item relative w-full bg-blue-100">
+                          <!-- <img
+                            src="https://img.daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.webp"
+                            class="w-full" /> -->
+                            <div class="px-4 pl-12 py-4">
+                                <h3 class="text-base font-bold text-yellow-700">Welcome offer for you</h3>
+                                <h2 class="text-blue-500 font-bold text-lg mb-2">Add money to wallet Get upto ₹350 Cashback</h2>
+
+                                <p class="text-[8px]">T&C apply</p>
+                            </div>
+                            <div class="pr-12 pt-4">
+                                <img src="assets/offer.jpg" alt="" class="w-48 rounded-lg">
+                            </div>
+                          <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                            <a href="#slide4" class="">❮</a>
+                            <a href="#slide2" class="">❯</a>
+                          </div>
+                        </div>
+                        <div id="slide2" class="carousel-item relative w-full">
+                          <img
+                            src="assets/offer-1.jpg"
+                            class="w-full" />
+                          <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                            <a href="#slide1" class="">❮</a>
+                            <a href="#slide3" class="">❯</a>
+                          </div>
+                        </div>
+                        <div id="slide3" class="carousel-item relative w-full">
+                          <img
+                            src="assets/offer-2.avif"
+                            class="w-full" />
+                          <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                            <a href="#slide2" class="">❮</a>
+                            <a href="#slide4" class="">❯</a>
+                          </div>
+                        </div>
+                        <div id="slide4" class="carousel-item relative w-full">
+                          <img
+                            src="assets/offer-3.webp"
+                            class="w-full" />
+                          <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                            <a href="#slide3" class="">❮</a>
+                            <a href="#slide1" class="">❯</a>
+                          </div>
+                        </div>
+                      </div>
+                 </div>
+                <!-- pay section -->
                 <div class=" flex items-center text-center gap-8 p-6 text-sm">
                     <!-- card 1 -->
                      <div>
@@ -101,6 +152,63 @@
                     <div class="flex gap-4 bg-gray-300 flex-1 py-2 rounded-xl items-center p-4">
                         <i class="fa-solid fa-people-arrows text-3xl"></i>
                         <p class="">Refer and <br> Get 1000</p>
+                    </div>
+                </div>
+                <!-- services -->
+                <div class="grid grid-cols-4 gap-4 text-xs text-center p-6 border-2 rounded-lg bg-gray-100">
+                    <div class="">
+                        <i class="fa-solid fa-mobile-screen text-3xl"></i>
+                        <p>Mobile Recharge</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-satellite-dish text-3xl"></i>
+                        <p>DTH Recharge</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-person-dots-from-line text-3xl"></i>
+                        <p>Personal Lone</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-lightbulb text-3xl"></i>
+                        <p>Electricity Bill</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-credit-card text-3xl"></i>
+                        <p>Credit Card</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-gas-pump text-3xl"></i>
+                        <p>Cylinder Booking</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-train text-3xl"></i>
+                        <p>Train Ticket</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-jet-fighter text-3xl"></i>
+                        <p>Flight Ticket</p>
+                    </div>
+                </div>
+                <!-- free tools -->
+                <div class="border-2 rounded-lg mt-6 bg-gray-100">
+                    <h3 class="font-bold pl-8 text-blue-700 pt-4">Free Tools</h3>
+                    <div class="flex gap-6 text-center p-6 pt-3">
+                        <div class="">
+                            <img src="assets/credit-score.png" alt="" class="w-10 block mx-auto mb-1">
+                            <p>Credit Score Check</p>
+                        </div>
+                        <div>
+                            <img src="assets/mutual-fund.png" alt="" class="w-10 block mx-auto mb-1">
+                            <p>Mutual Fund</p>
+                        </div>
+                        <div class=" ml-4">
+                            <img src="assets/ai.png" alt="" class="w-14 block mx-auto mb-2">
+                            <p class="block">Ask AI</p>
+                        </div>
+                        <div>
+                            <img src="assets/insurance.jpg" alt="" class="w-10 block mx-auto mb-1">
+                            <p>Insurance Status</p>
+                        </div>
                     </div>
                 </div>
             </div>
