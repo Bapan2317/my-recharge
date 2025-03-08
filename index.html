@@ -37,32 +37,26 @@
 </head>
 <body class="bg-gray-300">
 <!--max-w-lg-->
-    <section class="md:w-full  mx-auto bg-white">
-        <!-- Header -->
-    <main class="flex flex-col  items-center justify-center gap-2 h-screen">
-        <div class="">
-            <img class="max-w-xs mx-auto" src="assets/logo.png" alt="">
-        </div>
-        <!-- login -->
-        <div>
-          <fieldset class="fieldset w-xs border-base-300 p-6 rounded-box space-y-2">
-            
-            <div class="space-y-4">
-              <div class="space-y-2">
-                <label class=" text-xs">Mobile Number</label>
-                <input type="email" class="input border pl-3" placeholder="Enter Mobile Number" />
-              </div>
-              
-              <div class="space-y-2">
-                <label class=" text-xs">Enter Password</label>
-                <input type="password" class="input border pl-3" placeholder="Password" />
-              </div>
-            </div>
-            
-            <button id="login-btn" class="btn bg-green-500 block text-white text-sm">Login</button>
-          </fieldset>
+    <section class="bg-white flex max-h-screen justify-center items-center lg:max-w-md mx-auto">
+      <div>
+        <div class="mt-30">
+          <img src="assets/logo.png" alt="" class="mx-auto">
         </div>
 
+        <fieldset class="fieldset mx-auto w-sm border-base-300 p-4 rounded-box space-y-2">
+          
+          
+          <label class="fieldset-label text-2xl">Mobile Number</label>
+          <input type="email" class="input text-lg w-sm h-[60px] border rounded-lg pl-4 mb-4" placeholder="Mobile Number" />
+          
+          <label class="fieldset-label text-2xl">Password</label>
+          <input type="password" class="input text-lg w-sm h-[60px] border rounded-lg pl-4 " placeholder="Password" />
+          
+          <div>
+            <button class="btn btn-neutral mt-4 text-xl bg-blue-900 text-white font-bold w-full h-[50px] rounded-lg" id="login-btn">Login</button>
+          </div>
+        </fieldset>
+      </div>
     </section>
 
 
